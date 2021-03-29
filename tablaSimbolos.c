@@ -108,50 +108,24 @@ void initTablaSimbolos()
 {
 	int i;
 	const char *vector[]={
-		"program",
-		"type",
-		"var",
-		"array",
-		"begin",
-		"end",
-		"do",
-		"to",
-		"downto",
-		"then",
-		"of",
-		"function",
-		"procedure", 
-		"integer", 
-		"real", 
-		"boolean", 
-		"char", 
-		"for", 
-		"if", 
-		"else", 
-		"while", 
-		"repeat", 
-		"until", 
-		"case", 
-		"record", 
-		"writeln",
-		"write",
-		"const"
+		"L_CORCHETE",
+		"R_CORCHETE",
+	    "L_LLAVE",
+		"R_LLAVE", 
+		"COMA",		
+		"DOS_PUNTOS",      
+		"STRING",            
+		"NUMBER",  	      
+		"PR_TRUE",		      
+		"PR_FALSE",	      
+		"PR_NULL",
+		"FINAL"
 	};
- 	for (i=0;i<28;i++)
+ 	for (i=0;i<12;i++)
 	{
 		insertTablaSimbolos(vector[i],i+256);
 	}
-	insertTablaSimbolos(",",',');
-	insertTablaSimbolos(".",'.');
-	insertTablaSimbolos(":",':');
-	insertTablaSimbolos(";",';');
-	insertTablaSimbolos("(",'(');
-	insertTablaSimbolos(")",')');
-	insertTablaSimbolos("[",'[');
-	insertTablaSimbolos("]",']');
-	insertTablaSimbolos("true",BOOL);
-	insertTablaSimbolos("false",BOOL);
-	insertTablaSimbolos("not",NOT);
+	/*insertTablaSimbolos("not",NOT);
 	insertTablaSimbolos("<",OPREL);
 	insertTablaSimbolos("<=",OPREL);
 	insertTablaSimbolos("<>",OPREL);
@@ -165,5 +139,5 @@ void initTablaSimbolos()
 	insertTablaSimbolos("/",OPMULT);
 	insertTablaSimbolos("div",OPMULT);
 	insertTablaSimbolos("mod",OPMULT);
-	insertTablaSimbolos(":=",OPASIGNA);
+	insertTablaSimbolos(":=",OPASIGNA);*/
 }
